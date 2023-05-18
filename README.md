@@ -20,13 +20,13 @@ The global energy market heavily relies on crude oil as a primary source of ener
 
 ## Data
 
-To conduct this analysis, we utilized historical data on WTI crude oil prices and corresponding CO2 emissions. The dataset includes daily or monthly records, covering a significant period, allowing for a comprehensive examination of the relationship between WTI prices and environmental footprint.
+To conduct this analysis, we utilized historical data on WTI crude oil prices and corresponding CO2 emissions. The dataset includes daily or monthly records, covering a significant period, allowing for a comprehensive examination of the relationship between WTI prices and environmental footprint. 
 
 ## Methodology
 
 The analysis involved several key steps:
 
-1. Data Collection: Historical WTI price data and CO2 emissions data were collected from reliable sources such as government databases, energy organizations, and research institutes.
+1. Data Collection: Historical WTI price data and CO2 emissions data were collected from (DATA SOURCE)
 
 2. Data Preprocessing: The collected data was cleaned and processed to remove any inconsistencies or missing values. Additionally, data normalization techniques were applied to ensure comparability.
 
@@ -44,13 +44,13 @@ The analysis of the WTI price dynamics and environmental footprint revealed the 
 
 - Policy implications: The findings have implications for policymakers, energy companies, and environmental organizations, highlighting the need for sustainable energy strategies that consider the environmental consequences of oil price dynamics.
 
-## Conclusion
+## Conclusions
 
 The statistical analysis conducted in this project demonstrates a clear link between WTI prices and CO2 emissions. Understanding this relationship is crucial for assessing the environmental impact of oil price fluctuations and developing effective strategies to mitigate carbon emissions. The results emphasize the importance of sustainable energy alternatives and policies aimed at reducing reliance on fossil fuels.
 
 ## Contributing
 
-Contributions to this project are welcome! If you wish to contribute, please follow the guidelines outlined in [CONTRIBUTING.md](CONTRIBUTING.md). We appreciate your help in furthering our understanding of the WTI price dynamics and their environmental footprint.
+Contributions to this project are welcome! 
 
 ## License
 
