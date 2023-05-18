@@ -1,53 +1,64 @@
-# Install and load the required package
-install.packages("ggplot2")  # Install the ggplot2 package
-library(ggplot2)  # Load the ggplot2 package for creating charts
+# Install and load the ggplot2 package for data visualization
+install.packages("ggplot2")
+library(ggplot2)
 
-# This script extracts the Total CO2 per year in the OECD countries.
+# Install and load the readr package for reading CSV files
+install.packages("readr")
+library(readr)
 
-filtered_data <- subset(data2, country == "OECD (GCP)" & year >= 2011 & year <= 2021, select = c(year, co2))
-# Subset the "data2" dataset to filter rows where the country is "OECD (GCP)" and the year is between 2011 and 2021
-# Select only the "year" and "co2" columns from the subsetted data and store it in "filtered_data"
+# Read the OWID CO2 data from a CSV file
+owid.co2.data <- read.csv(PARAMETER)
 
-plot(filtered_data$year, filtered_data$co2,
+# View the content of the OWID CO2 data
+View(owid.co2.data)
+
+# Filter the OWID CO2 data for the specified conditions
+filtered_owid <- subset(owid.co2.data, country == "OECD (GCP)" & year >= 2011 & year <= 2021, select = c(year, co2))
+
+# View the filtered OWID CO2 data
+View(filtered_owid)
+
+# Create a scatterplot of the filtered OWID CO2 data
+plot(filtered_owid$year, filtered_owid$co2,
      xlab = "Year", ylab = "Total CO2",
-     main = "Scatterplot of Total CO2 (OECD, 2011-2021)")
-# Create a scatterplot using the "year" and "co2" columns from "filtered_data"
-# Set the x-axis label as "Year", y-axis label as "Total CO2", and main title as "Scatterplot of Total CO2 (OECD, 2011-2021)"
+     main = "Scatterplot of Total CO2 (OECD, 2011-2021)",
+     col = "#6F1AB6",
+     pch = 19)
 
+# Read the WTI monthly data from a CSV file
+wti.monthly <- read.csv(PARAMETER)
 
-# Then, we create a subset of the "data1" database to analyze the trend in WTI prices from 2011 to 2021
+# Filter the WTI monthly data for the specified conditions
+filtered_wti <- wti.monthly[strftime(wti.monthly$Date, format = "%m") == "01" & strftime(wti.monthly$Date, format = "%Y") >= "2011" & strftime(wti.monthly$Date, format = "%Y") <= "2021", ]
 
-subset_data <- subset(data1, strftime(Date, format = "%m-%d") == "01-15" & strftime(Date, format = "%Y") >= "2011" & strftime(Date, format = "%Y") <= "2021")
-# Subset the "data1" dataset to filter rows where the date is January 15th and the year is between 2011 and 2021
-# Store the subsetted data in "subset_data"
+# View the filtered WTI monthly data
+View(filtered_wti)
 
-prices <- subset_data$Price
-# Extract the "Price" column from "subset_data" and store it in "prices"
+# Extract the Price column from the filtered WTI data
+prices <- filtered_wti$Price
 
-# Create the bar chart
-bar_chart <- ggplot(selected_data, aes(x = Year, y = Price)) +
-    geom_bar(stat = "identity", fill = "blue") +
-    labs(x = "Year", y = "Price", title = "Bar Chart of Price (2011-2021)") +
-    theme_bw()
-
-# Display the bar chart
-print(bar_chart)
-# Create a bar chart using the "Year" and "Price" columns from "selected_data"
-# Set the fill color of the bars as "blue"
-# Set the x-axis label as "Year", y-axis label as "Price", and main title as "Bar Chart of Price (2011-2021)"
-# Use a black-and-white theme with "theme_bw()"
-# Print the bar chart
-
-
-# Combine the datasets
-combined_data <- merge(subset_data1, filtered_data2, by.x = "Date", by.y = "year", all = TRUE)
-
-# Create a combined chart
-combined_chart <- ggplot(combined_data) +
-  geom_bar(aes(x = strftime(Date, format = "%Y"), y = Price), stat = "identity", fill = "blue", alpha = 0.5) +
-  geom_line(aes(x = year, y = co2), color = "red") +
-  labs(x = "Year", y = "Value", title = "Comparison of WTI Prices and CO2 Levels") +
+# Create a bar chart of the WTI prices
+wti_chart <- ggplot(filtered_wti, aes(x = Date, y = Price)) +
+  geom_bar(stat = "identity", fill = "#6F1AB6") +
+  labs(x = "Date", y = "Price", title = "Bar Chart of Price (2011-2021)") +
   theme_bw()
 
-# Display the combined chart
+# Print the WTI chart
+print(wti_chart)
+
+# Extract the year from the Date column in the filtered WTI data
+filtered_wti$Year <- format(as.Date(filtered_wti$Date), "%Y")
+
+# Convert the Year and Price columns to numeric format
+filtered_wti$Year <- as.numeric(filtered_wti$Year)
+filtered_wti$Price <- as.numeric(as.character(filtered_wti$Price))
+
+# Combine the scatterplot of OWID CO2 data and the bar chart of WTI prices
+combined_chart <- ggplot() +
+  geom_point(data = filtered_owid, aes(x = year, y = co2), color = "#6F1AB6", shape = 19) +
+  geom_bar(data = filtered_wti, aes(x = Year, y = Price), stat = "identity", fill = "#6F1AB6") +
+  labs(x = "Year", y = "Value", title = "Combined Chart") +
+  theme_bw()
+
+# Print the combined chart
 print(combined_chart)
