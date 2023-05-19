@@ -53,3 +53,8 @@ combined_plot <- ggplot(combined_data, aes(x = year)) +
 # Display the combined chart with overlapping lines and scaled values
 print(combined_plot)
 
+
+# Calculate Pearson's correlation coefficient
+pearson_coeff <- cor(combined_data$scaled_co2, combined_data$scaled_energy)
+
+print(pearson_coeff)
