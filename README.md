@@ -1,4 +1,4 @@
-# WTI Price Dynamics and Environmental Footprint: <br> A Statistical Analysis of WTI prices and CO2 
+# WTI Price Dynamics and Environmental Footprint: <br> A Statistical Comparison of WTI prices and CO2 
 
 ## Project Overview
 
