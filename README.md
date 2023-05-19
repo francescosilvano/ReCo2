@@ -1,57 +1,65 @@
-# WTI Price Dynamics and Environmental Footprint: <br> A Statistical Comparison of WTI prices and CO2 
+# Renewable Energy and Environmental Footprint: 
+A Statistical Comparison of Renewable Energy Production and Levels of CO2
 
 ## Project Overview
 
-This project aims to perform a statistical analysis of West Texas Intermediate (WTI) crude oil prices and their correlation with the environmental footprint, specifically focusing on CO2 emissions. The project explores the dynamics of WTI prices and investigates the relationship between oil prices and CO2 emissions, shedding light on the environmental impact of oil price fluctuations.
+This project aims to perform a statistical analysis of the renewable energy production and their correlation with the environmental footprint, specifically focusing on CO2 emissions.
 
 ## Table of Contents
 
-- [Background](#background)
-- [Data](#data)
-- [Methodology](#methodology)
+- [Introduction](#introduction)
+- [Data Collection](#data-collection)
+- [Data Preprocessing](#data-preprocessing)
+- [Statistical Analysis](#statistical-analysis)
 - [Results](#results)
 - [Conclusion](#conclusion)
-- [Contributing](#contributing)
-- [License](#license)
 
-## Background
+## Introduction
+The world is facing pressing environmental challenges, including climate change caused by the emission of greenhouse gases such as carbon dioxide (CO2). To mitigate the impact of climate change, there is a growing interest in renewable energy sources as a sustainable alternative to fossil fuels. This project aims to analyze the relationship between renewable energy production and CO2 emissions, providing insights into the environmental footprint of different energy sources.
 
-The global energy market heavily relies on crude oil as a primary source of energy. The price of crude oil plays a significant role in shaping the world economy, impacting various sectors such as transportation, manufacturing, and agriculture. Additionally, the combustion of fossil fuels, including oil, is a major contributor to greenhouse gas emissions and climate change. Understanding the relationship between oil prices and environmental impact is crucial for devising sustainable energy strategies.
+## Data Collection
+To conduct this analysis, a comprehensive dataset was collected, encompassing information on renewable energy production and CO2 emissions over a specified time period. The dataset includes data from various sources, such as government agencies, international organizations, and research publications. The data covers a range of countries and regions, allowing for a global perspective on the topic.
 
-## Data
+## Data Preprocessing
+Before performing the statistical analysis, the collected data underwent preprocessing steps to ensure its quality and consistency. This included handling missing values, removing outliers, and standardizing the data format. Additionally, any necessary data transformations, such as aggregating yearly data or converting units, were performed to facilitate the analysis.
 
-To conduct this analysis, we utilized historical data on WTI crude oil prices and corresponding CO2 emissions. The dataset includes daily or monthly records, covering a significant period, allowing for a comprehensive examination of the relationship between WTI prices and environmental footprint. 
+## Statistical Analysis
+The statistical analysis consists of several key steps:
 
-## Methodology
+1. Descriptive Statistics: Compute summary statistics, such as mean, median, and standard deviation, to gain a general understanding of the dataset.
 
-The analysis involved several key steps:
 
-1. Data Collection: Historical WTI price data and CO2 emissions data were collected from (DATA SOURCE)
+# Summary statistics for renewable energy production
+summary(filtered_energy$`Electricity from renewables (TWh)`)
+Correlation Analysis: Calculate the correlation coefficient between renewable energy production and CO2 emissions. This will help identify the strength and direction of the relationship between these variables.
+R
+Copy code
+# Calculate the correlation coefficient
+correlation <- cor(filtered_energy$`Electricity from renewables (TWh)`, filtered_owid$co2)
+correlation
+Hypothesis Testing: Conduct hypothesis tests, such as t-tests or ANOVA, to determine if there are significant differences in CO2 emissions between different types of renewable energy sources.
+R
+Copy code
+# Perform hypothesis testing
+t_test <- t.test(filtered_owid$co2 ~ filtered_owid$year)
+t_test
+Time Series Analysis: Explore the temporal trends of renewable energy production and CO2 emissions using techniques such as moving averages or trend analysis. This will provide insights into the long-term patterns and potential seasonality effects.
+R
+Copy code
+# Create a line chart of the combined data with overlapping lines and scaled values
+combined_plot <- ggplot(combined_data, aes(x = year)) +
+  geom_path(aes(y = scaled_co2, color = "Total CO2")) +
+  geom_path(aes(y = scaled_energy, color = "Electricity from Renewables")) +
+  xlab("Year") +
+  ylab("Scaled Value") +
+  labs(title = "Combined Chart of Total CO2 and Electricity from Renewables") +
+  scale_color_manual(values = c("#6F1AB6", "#FF9900")) +
+  theme_minimal()
 
-2. Data Preprocessing: The collected data was cleaned and processed to remove any inconsistencies or missing values. Additionally, data normalization techniques were applied to ensure comparability.
+# Display the combined chart with overlapping lines and scaled values
+print(combined_plot)
+Results
+The results of the statistical analysis will be presented and interpreted in a clear and concise manner. Visualizations, such as charts, graphs, and tables, will be utilized to enhance the understanding of the findings. The results will address the research questions and hypotheses formulated in the project, shedding light on the relationship between renewable energy production and CO2 emissions.
 
-3. Exploratory Data Analysis: The dataset was analyzed to gain insights into the trends, patterns, and distributions of WTI prices and CO2 emissions. This involved visualizations, statistical summaries, and correlation analyses.
-
-4. Statistical Analysis: Various statistical methods, such as regression analysis, time series analysis, and hypothesis testing, were employed to quantify the relationship between WTI prices and CO2 emissions. The goal was to determine the extent to which oil price dynamics affect the environmental footprint.
-
-## Results
-
-The analysis of the WTI price dynamics and environmental footprint revealed the following key findings:
-
-- Strong correlation: The statistical analysis indicated a significant correlation between WTI prices and CO2 emissions, suggesting that fluctuations in oil prices have a substantial impact on carbon dioxide emissions.
-
-- Lagged effects: The relationship between oil prices and CO2 emissions exhibited some lagged effects, meaning that changes in oil prices could be observed to affect CO2 emissions with a certain time delay.
-
-- Policy implications: The findings have implications for policymakers, energy companies, and environmental organizations, highlighting the need for sustainable energy strategies that consider the environmental consequences of oil price dynamics.
-
-## Conclusions
-
-The statistical analysis conducted in this project demonstrates a clear link between WTI prices and CO2 emissions. Understanding this relationship is crucial for assessing the environmental impact of oil price fluctuations and developing effective strategies to mitigate carbon emissions. The results emphasize the importance of sustainable energy alternatives and policies aimed at reducing reliance on fossil fuels.
-
-## Contributing
-
-Contributions to this project are welcome! 
-
-## License
-
-This project is licensed under the [MIT License](LICENSE). Feel free to use the code and the findings for academic, research, or commercial purposes. However, we assume no responsibility for any reliance placed on this work. Use it at your own risk.
+Conclusion
+In conclusion, this project aims to contribute to the understanding of the environmental footprint of renewable energy sources by conducting a statistical analysis of their correlation with CO2 emissions. By analyzing the collected data and presenting the results, we can gain valuable insights into the potential of renewable energy in reducing greenhouse gas emissions and fostering a sustainable future. The findings of this project can be used to inform policy decisions, energy planning, and further research in the field of renewable energy and environmental sustainability.
