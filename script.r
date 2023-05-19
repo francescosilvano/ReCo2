@@ -36,16 +36,20 @@ energy_plot <- plot(filtered_energy$Year, filtered_energy$`Electricity from rene
 # Combine the filtered OWID CO2 data and filtered energy data
 combined_data <- merge(filtered_owid, filtered_energy, by.x = "year", by.y = "Year", all = TRUE)
 
-# Create a line chart of the combined data
+# Scale the y-axis values using normalization
+combined_data$scaled_co2 <- (combined_data$co2 - min(combined_data$co2)) / (max(combined_data$co2) - min(combined_data$co2))
+combined_data$scaled_energy <- (combined_data$`Electricity from renewables (TWh)` - min(combined_data$`Electricity from renewables (TWh)`)) / (max(combined_data$`Electricity from renewables (TWh)`)- min(combined_data$`Electricity from renewables (TWh)`))
+
+# Create a line chart of the combined data with overlapping lines and scaled values
 combined_plot <- ggplot(combined_data, aes(x = year)) +
-  geom_line(aes(y = co2, color = "Total CO2")) +
-  geom_line(aes(y = `Electricity from renewables (TWh)`, color = "Electricity from Renewables")) +
+  geom_path(aes(y = scaled_co2, color = "Total CO2")) +
+  geom_path(aes(y = scaled_energy, color = "Electricity from Renewables")) +
   xlab("Year") +
-  ylab("Value") +
+  ylab("Scaled Value") +
   labs(title = "Combined Chart of Total CO2 and Electricity from Renewables") +
   scale_color_manual(values = c("#6F1AB6", "#FF9900")) +
   theme_minimal()
 
-# Display the combined chart
+# Display the combined chart with overlapping lines and scaled values
 print(combined_plot)
 
