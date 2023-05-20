@@ -53,8 +53,8 @@ Additionally, the Pearson Coefficient was computed to measure the correlation be
 
 ### Datasets
 
-- [CO2 Emissions Dataset](https://ourworldindata.org/co2-emissions)
-- [Energy Dataset](https://ourworldindata.org/energy) (GitHub: [owid/energy-data](https://github.com/owid/energy-data))
+- [CO2 and Greenhouse Gas Emissions](https://ourworldindata.org/co2-and-greenhouse-gas-emissions)
+- [Energy](https://ourworldindata.org/energy)
 
 ## Authors
 
