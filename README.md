@@ -58,7 +58,7 @@ Additionally, the Pearson Coefficient was computed to measure the correlation be
 
 ## Authors
 
-This statistical study has been performed by Francesco Silvano ([GitHub](https://github.com/francescosilvano)) and Giacomo Noghera ([GitHub](https://github.com/giacomonoghera)). The data and libraries used belong to their respective owners.
+This statistical study has been performed by ([Francesco Silvano](https://github.com/francescosilvano)) and ([Giacomo Noghera](https://github.com/giacomonoghera)). The data and libraries used belong to their respective owners.
 
 [^1]: https://ourworldindata.org
 [^2]: https://articles.outlier.org/pearson-correlation-coefficient
