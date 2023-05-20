@@ -22,11 +22,13 @@ This research project aims to perform a comprehensive statistical analysis of re
 - Conducting pre-processing on the collected data to ensure quality and consistency
 - Performing statistical analysis using R software, including descriptive statistics and the Pearson Coefficient
 - Visualizing the results through linear charts
+
 <br>
 
 ### Data Collection
 
 To conduct this analysis, a comprehensive dataset was collected, encompassing information on renewable energy production and CO2 emissions over a specified timeframe. The datasets include data from the "Our World in Data" organization[^1], which covers a range of countries and regions, allowing for a global perspective on the topic.
+
 <br>
 
 ### Data Processing
