@@ -2,7 +2,7 @@
 
 ## A Statistical Comparison of Renewable Energy Production and Levels of CO2 produced
 
----
+
 
 ## Table of Contents
 - [Summary](#summary)
