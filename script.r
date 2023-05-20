@@ -58,3 +58,8 @@ print(combined_plot)
 pearson_coeff <- cor(combined_data$scaled_co2, combined_data$scaled_energy)
 
 print(pearson_coeff)
+
+
+# To calculate the expected value for the years 2022 and 2023 we print the combined data, analyse the table and use the
+
+
