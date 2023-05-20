@@ -32,6 +32,7 @@ This research project aims to perform a comprehensive statistical analysis of re
 To conduct this analysis, a comprehensive dataset was collected, encompassing information on renewable energy production and CO2 emissions over a specified timeframe. The datasets include data from the "Our World in Data" organization[^1], which covers a range of countries and regions, allowing for a global perspective on the topic.
 
 <br>
+
 ### Data Processing
 
 Before performing the statistical analysis, the collected data underwent a pre-processing process to ensure its quality and consistency. The following steps were taken:
