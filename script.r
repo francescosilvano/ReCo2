@@ -1,8 +1,22 @@
+## Renewable Energy and Environmental Footprint
+## A Statistical Comparison of Renewable Energy Production and Levels of CO2 produced
+
+## Authors:
+## 1.   Francesco Silvano  - 101826
+##      f.silvano@student.unisi.it
+## 2.   Giacomo Noghera    - 101544
+##      g.noghera@student.unisi.it
+
+## Course in Statistics, A.A. 2022/2023
+## Prof. Franceschi, Università di Siena
+## The following script comes attached to the presentation "Renewable Energy and Environmental Footprint"
+## Latest update: Saturday 20th May, 2023
+
+
 # Install and load the required packages
-install.packages(c("ggplot2", "readr", "dplyr"))
+install.packages(c("ggplot2", "readr"))
 library(ggplot2)
 library(readr)
-library(dplyr)
 
 # Read the OWID CO2 data from a CSV file
 owid.co2.data <- read_csv("References/owid-co2-data.csv")
@@ -60,6 +74,37 @@ pearson_coeff <- cor(combined_data$scaled_co2, combined_data$scaled_energy)
 print(pearson_coeff)
 
 
-# To calculate the expected value for the years 2022 and 2023 we print the combined data, analyse the table and use the
+# FUTURE TRENDS
+# The code below must be added IFF you want to plot the future trends in energy production and Co2 emissions 
 
 
+# Generate future years
+future_years <- 2022:2025
+
+# Generate predictions for CO2 values
+predicted_co2 <- predict(lm(scaled_co2 ~ year, data = combined_data), newdata = data.frame(year = future_years))
+
+# Generate predictions for electricity from renewables values
+predicted_energy <- predict(lm(scaled_energy ~ year, data = combined_data), newdata = data.frame(year = future_years))
+
+# Create a dataframe for the predicted data
+predicted_data <- data.frame(year = future_years, scaled_co2 = predicted_co2, scaled_energy = predicted_energy)
+
+
+# Combine the two predicted subsets
+
+# Create a line chart of the combined data with overlapping lines and scaled values
+combined_plot_2 <- ggplot(combined_data, aes(x = year)) +
+  geom_path(aes(y = scaled_co2, color = "Total CO2")) +
+  geom_path(aes(y = scaled_energy, color = "Electricity from Renewables")) +
+  geom_path(data = predicted_data, aes(y = scaled_co2, color = "Predicted CO2"), linetype = "dashed") +
+  geom_path(data = predicted_data, aes(y = scaled_energy, color = "Predicted Electricity from Renewables"), linetype = "dashed") +
+  xlab("Year") +
+  ylab("Scaled Value") +
+  labs(title = "Combined Chart of Total CO2 and Electricity from Renewables") +
+  scale_color_manual(values = c("#6F1AB6", "#FF9900", "#6F1AB6", "#FF9900")) +
+  scale_linetype_manual(values = c("solid", "solid", "dashed", "dashed")) +
+  theme_minimal()
+
+# Display the combined chart with overlapping lines and scaled values
+print(combined_plot_2)
