@@ -1,6 +1,6 @@
 # Renewable Energy and Environmental Footprint:
 
-## is there a reverse correlation between renewable energy production and worldwide carbon emissions? A Statistical Comparison of Renewable Energy Production and Levels of CO2 produced
+## Is there a reverse correlation between renewable energy production and worldwide carbon emissions? A Statistical Comparison of Renewable Energy Production and Levels of CO2 produced
 
 ---
 
