@@ -1,5 +1,4 @@
 # Renewable Energy and Environmental Footprint
-
 ## A Statistical Comparison of Renewable Energy Production and Levels of CO2 produced
 
 
@@ -12,7 +11,7 @@
 - [References](#references)
 - [Authors](#authors)
 
----
+
 
 ## Summary
 
