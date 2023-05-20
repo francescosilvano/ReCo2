@@ -3,7 +3,7 @@
 
 
 
-## Table of Contents
+### Table of Contents
 - [Summary](#summary)
 - [Data Collection](#data-collection)
 - [Data Processing](#data-processing)
@@ -13,7 +13,7 @@
 
 
 
-## Summary
+### Summary
 
 This research project aims to perform a comprehensive statistical analysis of renewable energy production and its correlation with the environmental footprint, with a specific focus on CO2 emissions. Key features of the study include:
 
@@ -22,13 +22,14 @@ This research project aims to perform a comprehensive statistical analysis of re
 - Conducting pre-processing on the collected data to ensure quality and consistency
 - Performing statistical analysis using R software, including descriptive statistics and the Pearson Coefficient
 - Visualizing the results through linear charts
+<br>
 
-
-## Data Collection
+### Data Collection
 
 To conduct this analysis, a comprehensive dataset was collected, encompassing information on renewable energy production and CO2 emissions over a specified timeframe. The datasets include data from the "Our World in Data" organization[^1], which covers a range of countries and regions, allowing for a global perspective on the topic.
+<br>
 
-## Data Processing
+### Data Processing
 
 Before performing the statistical analysis, the collected data underwent a pre-processing process to ensure its quality and consistency. The following steps were taken:
 
@@ -38,8 +39,9 @@ Before performing the statistical analysis, the collected data underwent a pre-p
 - Data transformation, including aggregating early data and converting units
 
 Two subsets were created: "filtered_owid" for the levels of CO2 and "filtered_energy" for the levels of TWh of energy produced in a specific year.
+<br>
 
-## Statistical Analysis
+### Statistical Analysis
 
 The statistical analysis consisted of several steps, starting from descriptive statistics to gain a general understanding of the dataset. R software and libraries were used for the analysis, including:
 
@@ -49,10 +51,11 @@ The statistical analysis consisted of several steps, starting from descriptive s
 These tools allowed for comprehensive comparison and visualization of the datasets, providing an overview of the phenomenon under study. Linear charts were used to facilitate the comparison of the resulting values.
 
 Additionally, the Pearson Coefficient was computed to measure the correlation between renewable energy production and CO2 emissions. The Pearson Coefficient is a statistical measure that quantifies the linear relationship between two variables. A result of -0.8866505 suggests a strong inverse correlation between renewable energy production and CO2 emissions[^2].
+<br>
 
-## References
+### References
 
-### Papers and Articles
+#### Papers and Articles
 
 - Umair, M., Yousuf, M.U., Ul-Haq, J., Hussain, Z. & Visas, H. 2023, "Revisiting the environmental impact of renewable energy, non-renewable energy, remittances, and economic growth: CO2 emissions versus ecological footprint for top remittance-receiving countries," Environmental Science and Pollution Research, vol. 30, no. 23, pp. 63565-63579. [Read more](https://www.scopus.com/record/display.uri?eid=2-s2.0-85152668236&origin=resultslist&sort=plf-f&src=s&st1=renewables+AND+environmental+AND+footprint+AND+co2&sid=ab56510ac157cbb6850df078fbff0eae&sot=b&sdt=b&sl=65&s=TITLE-ABS-KEY%28renewables+AND+environmental+AND+footprint+AND+co2%29&relpos=13&citeCnt=0&searchTerm=)
 
