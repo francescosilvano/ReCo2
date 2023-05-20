@@ -11,7 +11,7 @@
 - [References](#references)
 - [Authors](#authors)
 
-
+<br>
 
 ### Summary
 
@@ -51,6 +51,7 @@ The statistical analysis consisted of several steps, starting from descriptive s
 These tools allowed for comprehensive comparison and visualization of the datasets, providing an overview of the phenomenon under study. Linear charts were used to facilitate the comparison of the resulting values.
 
 Additionally, the Pearson Coefficient is computed to measure the correlation between renewable energy production and CO2 emissions. The Pearson Coefficient is a statistical measure that quantifies the linear relationship between two variables. The study takes into consideration the timeframe 2011 to 2021, in which the pearson coefficient obtained of -0.8866505 suggests a strong inverse correlation between renewable energy production and CO2 emissions[^2].
+
 <br>
 
 ### References
@@ -68,6 +69,8 @@ Additionally, the Pearson Coefficient is computed to measure the correlation bet
 
 - [CO2 and Greenhouse Gas Emissions](https://ourworldindata.org/co2-and-greenhouse-gas-emissions)
 - [Energy](https://ourworldindata.org/energy)
+
+<br>
 
 ### Authors
 
