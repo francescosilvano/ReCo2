@@ -59,17 +59,23 @@ Additionally, the Pearson Coefficient was computed to measure the correlation be
 
 - Umair, M., Yousuf, M.U., Ul-Haq, J., Hussain, Z. & Visas, H. 2023, "Revisiting the environmental impact of renewable energy, non-renewable energy, remittances, and economic growth: CO2 emissions versus ecological footprint for top remittance-receiving countries," Environmental Science and Pollution Research, vol. 30, no. 23, pp. 63565-63579. [Read more](https://www.scopus.com/record/display.uri?eid=2-s2.0-85152668236&origin=resultslist&sort=plf-f&src=s&st1=renewables+AND+environmental+AND+footprint+AND+co2&sid=ab56510ac157cbb6850df078fbff0eae&sot=b&sdt=b&sl=65&s=TITLE-ABS-KEY%28renewables+AND+environmental+AND+footprint+AND+co2%29&relpos=13&citeCnt=0&searchTerm=)
 
+<br>
+
 ### R Software Libraries
 
 - [GGPlot2](https://ggplot2.tidyverse.org/index.html)
 - [readr](https://cran.r-project.org/web/packages/readr/index.html)
+
+<br>
 
 ### Datasets
 
 - [CO2 and Greenhouse Gas Emissions](https://ourworldindata.org/co2-and-greenhouse-gas-emissions)
 - [Energy](https://ourworldindata.org/energy)
 
-## Authors
+<br>
+
+### Authors
 
 This statistical study has been performed by [Francesco Silvano](https://github.com/francescosilvano) and [Giacomo Noghera](https://github.com/giacomonoghera). The data and libraries used belong to their respective owners.
 
