@@ -76,5 +76,9 @@ Additionally, the Pearson Coefficient is computed to measure the correlation bet
 
 This statistical study has been performed by [Francesco Silvano](https://github.com/francescosilvano) and [Giacomo Noghera](https://github.com/giacomonoghera). The data and libraries used belong to their respective owners.
 
+### License
+
+
+
 [^1]: https://ourworldindata.org
 [^2]: https://articles.outlier.org/pearson-correlation-coefficient
