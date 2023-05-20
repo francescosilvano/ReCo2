@@ -61,14 +61,14 @@ Additionally, the Pearson Coefficient was computed to measure the correlation be
 
 <br>
 
-### R Software Libraries
+#### R Software Libraries
 
 - [GGPlot2](https://ggplot2.tidyverse.org/index.html)
 - [readr](https://cran.r-project.org/web/packages/readr/index.html)
 
 <br>
 
-### Datasets
+#### Datasets
 
 - [CO2 and Greenhouse Gas Emissions](https://ourworldindata.org/co2-and-greenhouse-gas-emissions)
 - [Energy](https://ourworldindata.org/energy)
