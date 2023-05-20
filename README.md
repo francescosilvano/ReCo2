@@ -33,12 +33,10 @@ To conduct this analysis, a comprehensive dataset was collected, encompassing in
 
 Before performing the statistical analysis, the collected data underwent a pre-processing process to ensure its quality and consistency. The following steps were taken:
 
-- Handling missing values
-- Removing outliers
-- Standardizing the data format
-- Data transformation, including aggregating early data and converting units
+- Creating two separate subsets to filter the two datasets;
+- Standardizing the data format;
+- Data transformation, including aggregating early data and converting units;
 
-Two subsets were created: "filtered_owid" for the levels of CO2 and "filtered_energy" for the levels of TWh of energy produced in a specific year.
 <br>
 
 ### Statistical Analysis
@@ -50,7 +48,7 @@ The statistical analysis consisted of several steps, starting from descriptive s
 
 These tools allowed for comprehensive comparison and visualization of the datasets, providing an overview of the phenomenon under study. Linear charts were used to facilitate the comparison of the resulting values.
 
-Additionally, the Pearson Coefficient was computed to measure the correlation between renewable energy production and CO2 emissions. The Pearson Coefficient is a statistical measure that quantifies the linear relationship between two variables. A result of -0.8866505 suggests a strong inverse correlation between renewable energy production and CO2 emissions[^2].
+Additionally, the Pearson Coefficient is computed to measure the correlation between renewable energy production and CO2 emissions. The Pearson Coefficient is a statistical measure that quantifies the linear relationship between two variables. The study takes into consideration the timeframe 2011 to 2021, in which the pearson coefficient obtained of -0.8866505 suggests a strong inverse correlation between renewable energy production and CO2 emissions[^2].
 <br>
 
 ### References
