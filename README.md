@@ -4,6 +4,16 @@
 
 ---
 
+## Table of Contents
+- [Summary](#summary)
+- [Data Collection](#data-collection)
+- [Data Processing](#data-processing)
+- [Statistical Analysis](#statistical-analysis)
+- [References](#references)
+- [Authors](#authors)
+
+---
+
 ## Summary
 
 This research project aims to perform a comprehensive statistical analysis of renewable energy production and its correlation with the environmental footprint, with a specific focus on CO2 emissions. Key features of the study include:
@@ -13,6 +23,7 @@ This research project aims to perform a comprehensive statistical analysis of re
 - Conducting pre-processing on the collected data to ensure quality and consistency
 - Performing statistical analysis using R software, including descriptive statistics and the Pearson Coefficient
 - Visualizing the results through linear charts
+
 
 ## Data Collection
 
