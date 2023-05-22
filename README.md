@@ -1,18 +1,17 @@
-# Renewable Energy and Environmental Footprint:
+# Renewable Energy and Environmental Footprint
 
 ## Is there a reverse correlation between renewable energy production and worldwide carbon emissions? A Statistical Comparison of Renewable Energy Production and Levels of CO2 produced
 
 ---
 
-### Table of Contents
+## Table of Contents
 - [Summary](#summary)
 - [Data Collection](#data-collection)
 - [Data Processing](#data-processing)
 - [Statistical Analysis](#statistical-analysis)
 - [References](#references)
 - [Authors](#authors)
-
-<br>
+- [License](#license)
 
 ## Summary
 
@@ -24,13 +23,9 @@ This research project aims to perform a comprehensive statistical analysis of re
 - Performing statistical analysis using R software, including descriptive statistics and the Pearson Coefficient
 - Visualizing the results through linear charts
 
-<br>
-
 ### Data Collection
 
 To conduct this analysis, a comprehensive dataset was collected, encompassing information on renewable energy production and CO2 emissions over a specified timeframe. The datasets include data from the "Our World in Data" organization[^1], which covers a range of countries and regions, allowing for a global perspective on the topic.
-
-<br>
 
 ### Data Processing
 
@@ -54,8 +49,6 @@ These tools allowed for comprehensive comparison and visualization of the datase
 
 Additionally, the Pearson Coefficient was computed to measure the correlation between renewable energy production and CO2 emissions. The Pearson Coefficient is a statistical measure that quantifies the linear relationship between two variables. A result of -0.8866505 suggests a strong inverse correlation between renewable energy production and CO2 emissions[^2].
 
-<br>
-
 ### References
 
 #### Papers and Articles
@@ -64,7 +57,7 @@ Additionally, the Pearson Coefficient was computed to measure the correlation be
 
 #### R Software Manuals & Libraries
 
-- [R Admin - Installationd]()
+- [R Admin - Installation](https://example.com/r-installation)
 - [R Data - Import/Export](https://cran.r-project.org/doc/manuals/r-release/R-data.pdf)
 - [GGPlot2](https://ggplot2.tidyverse.org/index.html)
 - [readr](https://cran.r-project.org/web/packages/readr/index.html)
@@ -74,15 +67,13 @@ Additionally, the Pearson Coefficient was computed to measure the correlation be
 - [CO2 and Greenhouse Gas Emissions](https://ourworldindata.org/co2-and-greenhouse-gas-emissions)
 - [Energy](https://ourworldindata.org/energy)
 
-<br>
-
-### Authors
+## Authors
 
 This statistical study has been performed by [Francesco Silvano](https://github.com/francescosilvano) and [Giacomo Noghera](https://github.com/giacomonoghera). The data and libraries used belong to their respective owners.
 
-<br>
+## License
 
-### License
+This project is licensed under the [MIT License](LICENSE). See the LICENSE file for more information.
 
 [^1]: https://ourworldindata.org
 [^2]: https://articles.outlier.org/pearson-correlation-coefficient
