@@ -1,6 +1,6 @@
 # Renewable Energy and Environmental Footprint
 
-## Is there a reverse correlation between renewable energy production and worldwide carbon emissions? A Statistical Comparison of Renewable Energy Production and Levels of CO2 produced
+## Investigating the Reverse Correlation between Renewable Energy Production and Global Carbon Emissions: A Statistical Analysis of CO2 Levels
 
 ---
 
@@ -15,7 +15,7 @@
 
 ## Summary
 
-This research project aims to perform a comprehensive statistical analysis of renewable energy production and its correlation with the environmental footprint, with a specific focus on CO2 emissions. Key features of the study include:
+This research project aims to conduct a comprehensive statistical analysis of the correlation between renewable energy production and the environmental footprint, with a specific focus on CO2 emissions. Key features of the study include:
 
 - Analyzing the relationship between renewable energy production and CO2 emissions
 - Utilizing a global dataset from "Our World in Data" to provide a broad perspective
@@ -25,7 +25,7 @@ This research project aims to perform a comprehensive statistical analysis of re
 
 ### Data Collection
 
-To conduct this analysis, a comprehensive dataset was collected, encompassing information on renewable energy production and CO2 emissions over a specified timeframe. The datasets include data from the "Our World in Data" organization[^1], which covers a range of countries and regions, allowing for a global perspective on the topic.
+To conduct this analysis, a comprehensive dataset was collected, encompassing information on renewable energy production and CO2 emissions over a specified timeframe. The datasets include data from the "Our World in Data" organization[^1], covering a range of countries and regions, allowing for a global perspective on the topic.
 
 ### Data Processing
 
@@ -36,7 +36,7 @@ Before performing the statistical analysis, the collected data underwent a pre-p
 - Standardizing the data format
 - Data transformation, including aggregating early data and converting units
 
-Two subsets were created: "filtered_owid" for the levels of CO2 and "filtered_energy" for the levels of TWh of energy produced in a specific year.
+Two subsets were created: "filtered_owid" for CO2 levels and "filtered_energy" for the TWh of energy produced in a specific year.
 
 ## Statistical Analysis
 
@@ -45,7 +45,7 @@ The statistical analysis consisted of several steps, starting from descriptive s
 - [GGPlot2](https://ggplot2.tidyverse.org/index.html)
 - [readr](https://cran.r-project.org/web/packages/readr/index.html)
 
-These tools allowed for comprehensive comparison and visualization of the datasets, providing an overview of the phenomenon under study. Linear charts were used to facilitate the comparison of the resulting values.
+These tools allowed for a comprehensive comparison and visualization of the datasets, providing an overview of the phenomenon under study. Linear charts were used to facilitate the comparison of the resulting values.
 
 Additionally, the Pearson Coefficient was computed to measure the correlation between renewable energy production and CO2 emissions. The Pearson Coefficient is a statistical measure that quantifies the linear relationship between two variables. A result of -0.8866505 suggests a strong inverse correlation between renewable energy production and CO2 emissions[^2].
 
@@ -69,7 +69,7 @@ Additionally, the Pearson Coefficient was computed to measure the correlation be
 
 ## Authors
 
-This statistical study has been performed by [Francesco Silvano](https://github.com/francescosilvano) and [Giacomo Noghera](https://github.com/giacomonoghera). The data and libraries used belong to their respective owners.
+This statistical study was conducted by [Francesco Silvano](https://github.com/francescosilvano) and [Giacomo Noghera](https://github.com/giacomonoghera). The data and libraries used belong to their respective owners.
 
 ## License
 
